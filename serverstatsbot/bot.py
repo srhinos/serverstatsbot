@@ -10,7 +10,7 @@ import discord
 from discord.http import HTTPClient, Route
 
 from .constants import prefix
-from .utils import write_json
+from .utils import load_json, write_json
 
 rootLogger = logging.getLogger(__name__)
 rootLogger.setLevel(logging.DEBUG)
@@ -32,7 +32,6 @@ class StatsBot(discord.Client):
 
         rootLogger.critical("Bot Initalized...\n")
 
-    # noinspection PyMethodOverriding
     def run(self):
         try:
             loop = asyncio.get_event_loop()
@@ -49,11 +48,12 @@ class StatsBot(discord.Client):
         rootLogger.info("~\n")
 
         discoverable_guilds = await self.collect_discoverable_guilds()
+        merged_guilds = await self.collect_undiscoverable_guilds(discoverable_guilds)
 
         rootLogger.info(
-            f"Collected {len(discoverable_guilds)} discoverable guilds! Outting to file..."
+            f"Collected {len(merged_guilds)} discoverable guilds! Outting to file..."
         )
-        write_json("guild_list.json", discoverable_guilds)
+        write_json("guild_list.json", merged_guilds)
         rootLogger.info('See "guild_list.json" for data!')
 
     async def _wait_delete_msg(self, message, after):
@@ -148,6 +148,33 @@ class StatsBot(discord.Client):
             if msg:
                 return msg
 
+    async def collect_undiscoverable_guilds(self, discoverable_guilds):
+        invite_code_list = load_json("guilds_not_discoverable.json")
+
+        guild_dict = {}
+
+        for invite_code in invite_code_list:
+            try:
+                partial_invite = await self.fetch_invite(invite_code, with_counts=True)
+                if partial_invite.guild.id in discoverable_guilds:
+                    continue
+
+                guild_dict[partial_invite.guild.id] = {
+                    "id": partial_invite.guild.id,
+                    "name": partial_invite.guild.name,
+                    "description": partial_invite.guild.description,
+                    "features": partial_invite.guild.features,
+                    "icon": partial_invite.guild.icon,
+                    "splash": partial_invite.guild.splash,
+                    "banner": partial_invite.guild.banner,
+                    "approximate_presence_count": partial_invite.approximate_presence_count,
+                    "approximate_member_count": partial_invite.approximate_member_count,
+                }
+            except Exception:
+                continue
+
+        return guild_dict.update(discoverable_guilds)
+
     async def collect_discoverable_guilds(self):
         limit = 48
         offset = 0
@@ -158,8 +185,7 @@ class StatsBot(discord.Client):
         )
 
         guild_dict = {guild["id"]: guild for guild in request["guilds"]}
-        comp_dict = {key: value for key, value in request.items() if key != "guilds"}
-        pprint.pprint(comp_dict)
+
         while request["total"] > 0:
 
             await asyncio.sleep(0.5)
@@ -171,10 +197,6 @@ class StatsBot(discord.Client):
             request = await self.http.request(
                 Route("GET", f"/discoverable-guilds"), params=params
             )
-            comp_dict = {
-                key: value for key, value in request.items() if key != "guilds"
-            }
-            pprint.pprint(comp_dict)
 
             temp_dict = {guild["id"]: guild for guild in request["guilds"]}
             guild_dict.update(temp_dict)
