@@ -26,19 +26,9 @@ class Response:
 
 class StatsBot(discord.Client):
     def __init__(self):
-        super().__init__(fetch_offline_members=True)
+        super().__init__(fetch_offline_members=False)
         self.prefix = prefix
-        # These are only needed when modifying the user profile
-        # self.email = "PUT YOUR EMAIL HERE"
-        # self.password = "PUT YOUR PASSWORD HERE"
-        self.bot_token = None  # PUT A BOT TOKEN HERE IF WANTED
-        self.token = "PUT TOKEN HERE FOR USER ACCOUNT"
-
-        self.bot_http = HTTPClient(
-            None, proxy=None, proxy_auth=None, loop=asyncio.get_event_loop()
-        )
-
-        self.has_initiallized_bot = False
+        self.token = "PUT TOKEN HERE"
 
         rootLogger.critical("Bot Initalized...\n")
 
@@ -46,7 +36,7 @@ class StatsBot(discord.Client):
     def run(self):
         try:
             loop = asyncio.get_event_loop()
-            loop.run_until_complete(self.start(self.token, bot=False))
+            loop.run_until_complete(self.start(self.token))
             loop.run_until_complete(self.connect())
         except Exception:
             traceback.print_exc()
@@ -55,12 +45,8 @@ class StatsBot(discord.Client):
             loop.close()
 
     async def on_ready(self):
-        if not self.has_initiallized_bot:
-            rootLogger.info("Connected To API!")
-            if self.bot_token:
-                await self.bot_http.static_login(self.bot_token, bot=True)
-                self.has_initiallized_bot = True
-            rootLogger.info("~\n")
+        rootLogger.info("Connected To API!")
+        rootLogger.info("~\n")
 
         discoverable_guilds = await self.collect_discoverable_guilds()
 
