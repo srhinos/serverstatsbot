@@ -1,6 +1,7 @@
 import asyncio
 import inspect
 import logging
+import pprint
 import re
 import traceback
 
@@ -31,7 +32,7 @@ class StatsBot(discord.Client):
         # self.email = "PUT YOUR EMAIL HERE"
         # self.password = "PUT YOUR PASSWORD HERE"
         self.bot_token = None  # PUT A BOT TOKEN HERE IF WANTED
-        self.token = "PUT YOUR USER ACCOUNT TOKEN HERE"
+        self.token = "PUT TOKEN HERE FOR USER ACCOUNT"
 
         self.bot_http = HTTPClient(
             None, proxy=None, proxy_auth=None, loop=asyncio.get_event_loop()
@@ -55,19 +56,19 @@ class StatsBot(discord.Client):
 
     async def on_ready(self):
         if not self.has_initiallized_bot:
-            rootLogger.success("Connected To API!")
+            rootLogger.info("Connected To API!")
             if self.bot_token:
                 await self.bot_http.static_login(self.bot_token, bot=True)
                 self.has_initiallized_bot = True
-            rootLogger.success("~\n")
+            rootLogger.info("~\n")
 
         discoverable_guilds = await self.collect_discoverable_guilds()
 
-        rootLogger.success(
+        rootLogger.info(
             f"Collected {len(discoverable_guilds)} discoverable guilds! Outting to file..."
         )
         write_json("guild_list.json", discoverable_guilds)
-        rootLogger.success('See "guild_list.json" for data!')
+        rootLogger.info('See "guild_list.json" for data!')
 
     async def _wait_delete_msg(self, message, after):
         await asyncio.sleep(after)
@@ -171,16 +172,23 @@ class StatsBot(discord.Client):
         )
 
         guild_dict = {guild["id"]: guild for guild in request["guilds"]}
-
+        comp_dict = {key: value for key, value in request.items() if key != "guilds"}
+        pprint.pprint(comp_dict)
         while request["total"] > 0:
 
-            await asyncio.sleep(5)
+            await asyncio.sleep(0.5)
 
             offset += limit
+
+            params = {"offset": offset, "limit": limit}
 
             request = await self.http.request(
                 Route("GET", f"/discoverable-guilds"), params=params
             )
+            comp_dict = {
+                key: value for key, value in request.items() if key != "guilds"
+            }
+            pprint.pprint(comp_dict)
 
             temp_dict = {guild["id"]: guild for guild in request["guilds"]}
             guild_dict.update(temp_dict)
