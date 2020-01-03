@@ -127,4 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# VSCODE
 .vscode/settings.json
+
+# guild lists
+collected_data/guild_list_*.json

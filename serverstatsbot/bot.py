@@ -1,19 +1,31 @@
 import asyncio
+import datetime
 import inspect
 import logging
 import pprint
 import re
+import sys
 import traceback
 
 import aiohttp
 import discord
 from discord.http import HTTPClient, Route
 
-from .constants import prefix
-from .utils import load_json, write_json
+from .utils import load_json, write_json, run_period
+
+from .settings import Settings
 
 rootLogger = logging.getLogger(__name__)
 rootLogger.setLevel(logging.DEBUG)
+
+sh = logging.StreamHandler(stream=sys.stdout)
+sh.setFormatter(logging.Formatter(
+    fmt="[%(levelname)s]: %(message)s"
+))
+
+sh.setLevel(logging.DEBUG)
+
+rootLogger.addHandler(sh)
 
 
 class Response:
@@ -25,17 +37,29 @@ class Response:
 
 
 class StatsBot(discord.Client):
-    def __init__(self):
+    def __init__(self, **kwargs):
         super().__init__(fetch_offline_members=False)
-        self.prefix = prefix
-        self.token = "PUT TOKEN HERE"
+        self.already_ready = False
+        self.settings = Settings(**kwargs)
+        self.prefix = self.settings.prefix
+
+        self.running_tasks = set()
 
         rootLogger.critical("Bot Initalized...\n")
+
+    async def close(self):
+        for task in self.running_tasks:
+            task.cancel()
+            try:
+                await task
+            except asyncio.CancelledError:
+                rootLogger.debug(f"Canceled task {task}")
+        await super().close()
 
     def run(self):
         try:
             loop = asyncio.get_event_loop()
-            loop.run_until_complete(self.start(self.token))
+            loop.run_until_complete(self.start(self.settings.token))
             loop.run_until_complete(self.connect())
         except Exception:
             traceback.print_exc()
@@ -44,17 +68,31 @@ class StatsBot(discord.Client):
             loop.close()
 
     async def on_ready(self):
-        rootLogger.info("Connected To API!")
-        rootLogger.info("~\n")
+        if not self.already_ready:
+            rootLogger.info("Connected To API!")
+            rootLogger.info("~\n")
 
+            self.running_tasks.add(
+                asyncio.ensure_future(run_period(self.settings.fetch_period, self.collect_write_data))
+            )
+            self.already_ready = True
+        else:
+            rootLogger.info("Reconnected To API!")
+
+    async def collect_write_data(self):
         discoverable_guilds = await self.collect_discoverable_guilds()
         merged_guilds = await self.collect_undiscoverable_guilds(discoverable_guilds)
 
         rootLogger.info(
             f"Collected {len(merged_guilds)} discoverable guilds! Outting to file..."
         )
-        write_json("guild_list.json", merged_guilds)
-        rootLogger.info('See "guild_list.json" for data!')
+
+        current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M")
+
+        write_json(f"collected_data/guild_list_{current_time}.json", merged_guilds)
+        write_json(f"guild_list.json", merged_guilds)
+        rootLogger.info(f'See "collected_data/guild_list_{current_time}.json" for data of this time!')
+        rootLogger.info('See "guild_list.json" for latest data!')
 
     async def _wait_delete_msg(self, message, after):
         await asyncio.sleep(after)
@@ -151,7 +189,7 @@ class StatsBot(discord.Client):
     async def collect_undiscoverable_guilds(self, discoverable_guilds):
         invite_code_list = load_json("guilds_not_discoverable.json")
 
-        guild_dict = {}
+        guild_dict = dict()
 
         for invite_code in invite_code_list:
             try:
@@ -173,9 +211,14 @@ class StatsBot(discord.Client):
             except Exception:
                 continue
 
-        return guild_dict.update(discoverable_guilds)
+        guild_dict.update(discoverable_guilds)
+        return guild_dict
 
     async def collect_discoverable_guilds(self):
+        if self.user.bot:
+            rootLogger.info("Not collecting discoverables via API due to being a bot")
+            return dict()
+
         limit = 48
         offset = 0
         params = {"offset": offset, "limit": limit}
