@@ -59,8 +59,7 @@ class StatsBot(discord.Client):
     def run(self):
         try:
             loop = asyncio.get_event_loop()
-            loop.run_until_complete(self.start(self.settings.token))
-            loop.run_until_complete(self.connect())
+            loop.run_until_complete(self.start(self.settings.token, bot=self.settings.bot))
         except Exception:
             traceback.print_exc()
             loop.run_until_complete(self.close())

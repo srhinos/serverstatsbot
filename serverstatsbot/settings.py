@@ -11,6 +11,7 @@ class Settings:
         # we also load settings from json in the future
         self.token = kwargs.get('token', token)
         self.prefix = kwargs.get('prefix', prefix)
+        self.bot = (kwargs.get('bot', 'y') == 'y')
 
         self.fetch_period = timestamp_to_seconds(kwargs.get('fetch_period', '1h'))
         self.check_validity()
@@ -24,6 +25,10 @@ class Settings:
         parser = argparse.ArgumentParser()
         parser.add_argument("-t", "--token", help="specify token")
         parser.add_argument("-p", "--prefix", help="specify prefix")
+        parser.add_argument(
+            "-b", "--bot",
+            help="specify whether token given is a bot (y/n), defaults to y. Note that using user token is risky"
+        )
 
         parser.add_argument(
             "-fp", "--fetch-period",
