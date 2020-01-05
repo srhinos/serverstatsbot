@@ -13,7 +13,7 @@ class Settings:
         self.prefix = kwargs.get('prefix', prefix)
         self.bot = (kwargs.get('bot', 'y') == 'y')
 
-        self.delay_first_fetch = timestamp_to_seconds(kwargs.get('delay_first_fetch', '0s'))
+        self.delay_first_fetch = timestamp_to_seconds(kwargs.get('delay_first_fetch', '1s'))
         self.fetch_period = timestamp_to_seconds(kwargs.get('fetch_period', '1h'))
         self.plot_period = kwargs.get('plot_period', None)
         if self.plot_period:

@@ -119,15 +119,18 @@ class StatsBot(discord.Client):
                 this_data.append(
                     {
                         'name': guild['name'],
-                        'online': guild['approximate_presence_count'],
-                        'member': guild['approximate_member_count']
+                        'onlines': guild['approximate_presence_count'],
+                        'members': guild['approximate_member_count']
                     }
                 )
 
             load_data.append({'date': datetime.datetime.strptime(date, "%Y%m%d-%H%M"), 'guilds': this_data})
 
-        fname = plot_all(load_data, 'date', 'member', 'name', 'guilds', x_date=True, n=10, title = 'top 10 members over time')
+        fname = plot_all(load_data, 'date', 'members', 'name', 'guilds', x_date=True, n=10, title = 'top 10 members over time')
         rootLogger.info(f'See "{fname}" for member graph!')
+        fname = plot_all(load_data, 'date', 'onlines', 'name', 'guilds', x_date=True, n=10, title = 'top 10 onlines over time')
+        rootLogger.info(f'See "{fname}" for online graph!')
+        
 
 
     async def _wait_delete_msg(self, message, after):
