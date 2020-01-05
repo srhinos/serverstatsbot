@@ -74,7 +74,13 @@ class StatsBot(discord.Client):
             rootLogger.info("~\n")
 
             self.running_tasks.add(
-                asyncio.ensure_future(run_period(self.settings.fetch_period, self.collect_write_data))
+                asyncio.ensure_future(
+                    run_period(
+                        self.settings.fetch_period,
+                        self.collect_write_data,
+                        start=datetime.datetime.now() + datetime.timedelta(seconds=self.settings.delay_first_fetch)
+                    )
+                )
             )
             if self.settings.plot_period:
                 self.running_tasks.add(

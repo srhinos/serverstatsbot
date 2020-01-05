@@ -13,6 +13,7 @@ class Settings:
         self.prefix = kwargs.get('prefix', prefix)
         self.bot = (kwargs.get('bot', 'y') == 'y')
 
+        self.delay_first_fetch = timestamp_to_seconds(kwargs.get('delay_first_fetch', '0s'))
         self.fetch_period = timestamp_to_seconds(kwargs.get('fetch_period', '1h'))
         self.plot_period = kwargs.get('plot_period', None)
         if self.plot_period:
@@ -33,6 +34,10 @@ class Settings:
             help="specify whether token given is a bot (y/n), defaults to y. Note that using user token is risky"
         )
 
+        parser.add_argument(
+            "-df", "--delay-first-fetch",
+            help="specify time to delay before bot does the first fetch"
+        )
         parser.add_argument(
             "-fp", "--fetch-period",
             help="specify period for the bot to fetch the information"
