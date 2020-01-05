@@ -13,11 +13,23 @@ class Settings:
         self.prefix = kwargs.get('prefix', prefix)
         self.bot = (kwargs.get('bot', 'y') == 'y')
 
-        self.delay_first_fetch = timestamp_to_seconds(kwargs.get('delay_first_fetch', '1s'))
+        try:
+            self.delay_first_fetch = kwargs.get('delay_first_fetch')
+        except KeyError:
+            self.delay_first_fetch = 0
+
         self.fetch_period = timestamp_to_seconds(kwargs.get('fetch_period', '1h'))
+
+        try:
+            self.delay_first_plot = kwargs.get('delay_first_plot')
+        except KeyError:
+            self.delay_first_fetch = self.delay_first_fetch + 90
+
         self.plot_period = kwargs.get('plot_period', None)
+
         if self.plot_period:
             self.plot_period = timestamp_to_seconds(self.plot_period)
+
         self.check_validity()
 
     def check_validity(self):
@@ -43,8 +55,12 @@ class Settings:
             help="specify period for the bot to fetch the information"
         )
         parser.add_argument(
+            "-dp", "--delay-first-plot",
+            help="specify time to delay before bot does the first plot"
+        )
+        parser.add_argument(
             "-pp", "--plot-period",
-            help="specify period for the bot to plot graphs"
+            help="specify period for the bot to plot graphs. don't plot if not specified"
         )
 
         return parser
