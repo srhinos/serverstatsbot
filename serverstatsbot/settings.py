@@ -14,16 +14,16 @@ class Settings:
         self.bot = (kwargs.get('bot', 'y') == 'y')
 
         try:
-            self.delay_first_fetch = kwargs.get('delay_first_fetch')
+            self.delay_first_fetch = timestamp_to_seconds(kwargs['delay_first_fetch'])
         except KeyError:
             self.delay_first_fetch = 0
 
         self.fetch_period = timestamp_to_seconds(kwargs.get('fetch_period', '1h'))
 
         try:
-            self.delay_first_plot = kwargs.get('delay_first_plot')
+            self.delay_first_plot = timestamp_to_seconds(kwargs['delay_first_plot'])
         except KeyError:
-            self.delay_first_fetch = self.delay_first_fetch + 90
+            self.delay_first_plot = self.delay_first_fetch + 90
 
         self.plot_period = kwargs.get('plot_period', None)
 

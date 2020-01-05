@@ -84,7 +84,13 @@ class StatsBot(discord.Client):
             )
             if self.settings.plot_period:
                 self.running_tasks.add(
-                    asyncio.ensure_future(run_period(self.settings.plot_period, self.plot_graphs))
+                    asyncio.ensure_future(
+                        run_period(
+                            self.settings.plot_period,
+                            self.plot_graphs,
+                            start=datetime.datetime.now() + datetime.timedelta(seconds=self.settings.delay_first_plot)
+                        )
+                    )
                 )
             self.already_ready = True
         else:
