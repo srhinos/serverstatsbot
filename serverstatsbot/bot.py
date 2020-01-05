@@ -118,9 +118,9 @@ class StatsBot(discord.Client):
                     }
                 )
 
-            load_data.append({'date': date, 'guilds': this_data})
+            load_data.append({'date': datetime.datetime.strptime(date, "%Y%m%d-%H%M"), 'guilds': this_data})
 
-        fname = plot_all(load_data, 'date', 'member', 'name', 'guilds', n=10, title = 'top 10 members over time')
+        fname = plot_all(load_data, 'date', 'member', 'name', 'guilds', x_date=True, n=10, title = 'top 10 members over time')
         rootLogger.info(f'See "{fname}" for member graph!')
 
 
