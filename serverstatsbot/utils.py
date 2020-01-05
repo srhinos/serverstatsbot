@@ -5,6 +5,9 @@ import json
 import re
 import traceback
 
+from functools import wraps
+from importlib import import_module
+
 import discord
 
 from .constants import DISCORD_EPOCH
@@ -341,14 +344,49 @@ def strfdelta(tdelta):
     )
 
 
-async def run_period(seconds, afunc, start=datetime.datetime.now(), *args, **kwargs):
+async def run_period(seconds, func, start=datetime.datetime.now(), *args, **kwargs):
     while True:
         diff = start - datetime.datetime.now()
         diff_sec = diff.total_seconds()
         await asyncio.sleep(diff_sec)
         try:
-            await afunc(*args, **kwargs)
+            if asyncio.iscoroutinefunction(func):
+                await func(*args, **kwargs)
+            else:
+                func(*args, **kwargs)
         except Exception:
             print("Error invoking scheduled function:")
             traceback.print_exc()
         start += datetime.timedelta(seconds=seconds)
+
+
+def imports(*modules, caller=None):
+    if not caller:
+        caller_frame = inspect.stack()[1]
+        caller_module = inspect.getmodule(caller_frame[0])
+    else:
+        caller_module = inspect.getmodule(caller)
+    loaded_modules = (
+        import_module(module, caller_module.__package__) for module in modules
+    )
+    return loaded_modules
+
+
+def ensure_imports(*modules):
+    def wrapper(func):
+        if asyncio.iscoroutinefunction(func):
+            @wraps(func)
+            async def wrapped(*args, **kwargs):
+                imported = imports(*modules, caller=func)
+                kwargs['modules'] = imported
+                return await func(*args, **kwargs)
+
+        else:
+            @wraps(func)
+            def wrapped(*args, **kwargs):
+                imported = imports(*modules, caller=func)
+                kwargs['modules'] = imported
+                return func(*args, **kwargs)
+
+        return wrapped
+    return wrapper

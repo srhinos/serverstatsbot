@@ -1,5 +1,6 @@
 import asyncio
 import datetime
+import glob
 import inspect
 import logging
 import pprint
@@ -11,6 +12,7 @@ import aiohttp
 import discord
 from discord.http import HTTPClient, Route
 
+from .plot import plot_all
 from .utils import load_json, write_json, run_period
 
 from .settings import Settings
@@ -74,6 +76,10 @@ class StatsBot(discord.Client):
             self.running_tasks.add(
                 asyncio.ensure_future(run_period(self.settings.fetch_period, self.collect_write_data))
             )
+            if self.settings.plot_period:
+                self.running_tasks.add(
+                    asyncio.ensure_future(run_period(self.settings.plot_period, self.plot_graphs))
+                )
             self.already_ready = True
         else:
             rootLogger.info("Reconnected To API!")
@@ -92,6 +98,31 @@ class StatsBot(discord.Client):
         write_json(f"guild_list.json", merged_guilds)
         rootLogger.info(f'See "collected_data/guild_list_{current_time}.json" for data of this time!')
         rootLogger.info('See "guild_list.json" for latest data!')
+
+    def plot_graphs(self):
+        # @TheerapakG: should we store this so that we don't need to load again?
+        # or shold we populate graph as loaded?
+        load_data = list()
+
+        for filename in glob.iglob('./collected_data/guild_list_*.json'):
+            date = re.search(r'guild_list_(.+).json', filename).group(1)
+            
+            this_data = list()
+            raw = load_json(filename)
+            for guild in raw.values():
+                this_data.append(
+                    {
+                        'name': guild['name'],
+                        'online': guild['approximate_presence_count'],
+                        'member': guild['approximate_member_count']
+                    }
+                )
+
+            load_data.append({'date': date, 'guilds': this_data})
+
+        fname = plot_all(load_data, 'date', 'member', 'name', 'guilds', n=10, title = 'top 10 members over time')
+        rootLogger.info(f'See "{fname}" for member graph!')
+
 
     async def _wait_delete_msg(self, message, after):
         await asyncio.sleep(after)

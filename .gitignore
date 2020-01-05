@@ -134,3 +134,4 @@ dmypy.json
 # guild lists
 collected_data/guild_list_*.json
 guild_list.json
+output/*
