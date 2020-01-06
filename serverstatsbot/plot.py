@@ -5,6 +5,7 @@ from .utils import ensure_imports
 
 def plot_all(data, x_axis, y_axis, label, entries, **kwargs):
     import matplotlib.figure
+    from matplotlib.cm import get_cmap
 
     title = kwargs.get('title', '')
     n = kwargs.get('n', None)
@@ -34,11 +35,19 @@ def plot_all(data, x_axis, y_axis, label, entries, **kwargs):
     for line in all_lines.values():
         line.extend((None, )*(line_len-len(line)))
 
-    for name, line in all_lines.items():
+    if len(all_lines) > 10:
+        colors = get_cmap('tab20').colors
+    else:
+        colors = get_cmap('tab10').colors
+        
+    def get_color(i):
+        return colors[i%len(colors)]
+
+    for i, (name, line) in enumerate(all_lines.items()):
         if x_date or y_date:
-            axes.plot_date(x_labels, line, xdate=x_date, ydate=y_date, label=name, ls='-')
+            axes.plot_date(x_labels, line, xdate=x_date, ydate=y_date, label=name, ls='-', color = get_color(i))
         else:
-            axes.plot(x_labels, line, label = name)
+            axes.plot(x_labels, line, label = name, color = get_color(i))
 
     axes.set_ylabel(y_axis)
     axes.set_xlabel(x_axis)
