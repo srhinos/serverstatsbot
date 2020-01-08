@@ -132,6 +132,6 @@ dmypy.json
 .vscode/settings.json
 
 # guild lists
-collected_data/guild_list_*.json
+collected_data/*
 guild_list.json
 output/*
