@@ -1,0 +1,2948 @@
+{
+  "114211522384756737": {
+    "id": "114211522384756737",
+    "name": "Xbox",
+    "description": "Welcome to the Xbox Discord server. When everybody plays, we all win.",
+    "icon": "a_1f1625ffae923a2119ab674350eb69ac",
+    "splash": "0b5a397fb321bb20b3cdb344a770204e",
+    "banner": "1ac05b5c7141b892ff447158765c39bb",
+    "features": [
+      "ANIMATED_ICON",
+      "BANNER",
+      "COMMERCE",
+      "COMMUNITY",
+      "DISCOVERABLE",
+      "ENABLED_DISCOVERABLE_BEFORE",
+      "FEATURABLE",
+      "INVITE_SPLASH",
+      "NEWS",
+      "PREVIEW_ENABLED",
+      "VANITY_URL",
+      "VERIFIED",
+      "VIP_REGIONS",
+      "WELCOME_SCREEN_ENABLED"
+    ],
+    "approximate_presence_count": 11034,
+    "approximate_member_count": 46402,
+    "premium_subscription_count": 48,
+    "preferred_locale": "en-US",
+    "auto_removed": false,
+    "discovery_splash": "0b5a397fb321bb20b3cdb344a770204e",
+    "emojis": [
+      {
+        "name": "leftshark",
+        "roles": [],
+        "id": "590713691712913408",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "XboxOnePride",
+        "roles": [],
+        "id": "596191856820486144",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "whenitsready",
+        "roles": [],
+        "id": "613565267892764692",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "doubt",
+        "roles": [],
+        "id": "643891059113590795",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "yeet",
+        "roles": [],
+        "id": "646422021684592640",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "yeet2",
+        "roles": [],
+        "id": "646422722913632285",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "heartsob",
+        "roles": [],
+        "id": "646430193556127765",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "prideflag",
+        "roles": [],
+        "id": "646444309679308820",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "AchievementUnlocked",
+        "roles": [],
+        "id": "650450763016962073",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "ninjacat",
+        "roles": [],
+        "id": "659223200584040458",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "legoban",
+        "roles": [],
+        "id": "663581206977445908",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "zune",
+        "roles": [],
+        "id": "694381841674665985",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "moonsmirk",
+        "roles": [],
+        "id": "694382530736160822",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "GamePass",
+        "roles": [],
+        "id": "712367095597498459",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "PrideChief",
+        "roles": [],
+        "id": "717069526402990148",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "xboxpride",
+        "roles": [],
+        "id": "718249230208073750",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "xboxpridephi",
+        "roles": [],
+        "id": "718249275938570282",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "xboxpridepan",
+        "roles": [],
+        "id": "718249459112345744",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "xboxpridetrans",
+        "roles": [],
+        "id": "718249566969004032",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "xboxpridebi",
+        "roles": [],
+        "id": "718249598933663764",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "xboxpridegf",
+        "roles": [],
+        "id": "718249657506988052",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "xboxprideles",
+        "roles": [],
+        "id": "718249958540836944",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "xboxpridenb",
+        "roles": [],
+        "id": "718250004162281542",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "xboxprideace",
+        "roles": [],
+        "id": "718250038219898923",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "ogxbox",
+        "roles": [],
+        "id": "718676354899640340",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "xblpridephi",
+        "roles": [],
+        "id": "726205669119885354",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "xblpridepro",
+        "roles": [],
+        "id": "726205721506742343",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "agenderheart",
+        "roles": [],
+        "id": "756353829150261299",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "xboxprideagender",
+        "roles": [],
+        "id": "756533895272464465",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "xboxprideanim",
+        "roles": [],
+        "id": "759810851925524541",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      }
+    ],
+    "emoji_count": 62,
+    "primary_category_id": 1,
+    "primary_category": {
+      "id": 1,
+      "name": {
+        "default": "Gaming",
+        "localizations": {
+          "de": "Gaming",
+          "fr": "Gaming",
+          "ru": "\u0418\u0433\u0440\u044b"
+        }
+      },
+      "is_primary": true
+    },
+    "categories": [
+      {
+        "id": 1,
+        "name": {
+          "default": "Gaming",
+          "localizations": {
+            "de": "Gaming",
+            "fr": "Gaming",
+            "ru": "\u0418\u0433\u0440\u044b"
+          }
+        },
+        "is_primary": true
+      }
+    ],
+    "keywords": [],
+    "vanity_url_code": "xbox",
+    "applications": [
+      {
+        "id": "568548752466378772",
+        "name": {
+          "default": "Xbox"
+        },
+        "aliases": [],
+        "publishers": [],
+        "developers": []
+      }
+    ]
+  },
+  "281889582855880705": {
+    "id": "281889582855880705",
+    "name": "State Of Decay",
+    "description": "The State of Decay official server, run by developer Undead Labs",
+    "icon": "c279802204704077b347809b3c6dcb17",
+    "splash": "ae24b53c318f611d6f5d570fa4ef33ea",
+    "banner": "ae24b53c318f611d6f5d570fa4ef33ea",
+    "features": [
+      "ANIMATED_ICON",
+      "BANNER",
+      "COMMERCE",
+      "COMMUNITY",
+      "DISCOVERABLE",
+      "ENABLED_DISCOVERABLE_BEFORE",
+      "FEATURABLE",
+      "INVITE_SPLASH",
+      "NEWS",
+      "PREVIEW_ENABLED",
+      "VANITY_URL",
+      "VERIFIED",
+      "VIP_REGIONS",
+      "WELCOME_SCREEN_ENABLED"
+    ],
+    "approximate_presence_count": 3164,
+    "approximate_member_count": 14695,
+    "premium_subscription_count": 4,
+    "preferred_locale": "en-US",
+    "auto_removed": false,
+    "discovery_splash": "b8af810b20c70092de222b15573f2477",
+    "emojis": [
+      {
+        "name": "stat_ammo",
+        "roles": [],
+        "id": "443546817980923907",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "skill_cardio",
+        "roles": [],
+        "id": "443546818056421408",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "stat_dead",
+        "roles": [],
+        "id": "443546818123399188",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "plague_heart",
+        "roles": [],
+        "id": "443546818165604382",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "zombie_horde",
+        "roles": [],
+        "id": "443546818169536534",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "stat_container",
+        "roles": [],
+        "id": "443546818169798666",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "skill_wits",
+        "roles": [],
+        "id": "443546818215804929",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "stat_influence",
+        "roles": [],
+        "id": "443546818219868160",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "zombie",
+        "roles": [],
+        "id": "443546818228518912",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "stat_labor",
+        "roles": [],
+        "id": "443546818274525194",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "stat_food",
+        "roles": [],
+        "id": "443546818295365642",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "stat_materials",
+        "roles": [],
+        "id": "443546818316599297",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "skill_shooting",
+        "roles": [],
+        "id": "443546818320531456",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "skill_fighting",
+        "roles": [],
+        "id": "443546818337439754",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "stat_parts",
+        "roles": [],
+        "id": "443546818354348042",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "zombie_screamer",
+        "roles": [],
+        "id": "443546818572451840",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "zombie_bloater",
+        "roles": [],
+        "id": "443546818630909952",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "stat_health",
+        "roles": [],
+        "id": "443548267842633729",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "stat_stamina",
+        "roles": [],
+        "id": "443548267943559170",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "cascade_hills",
+        "roles": [],
+        "id": "446796522450059265",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "meagher_valley",
+        "roles": [],
+        "id": "446796522634608649",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "drucker_county",
+        "roles": [],
+        "id": "446796522932404224",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "icon_map_drucker_county",
+        "roles": [],
+        "id": "446797855219253250",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "icon_map_cascade_hills",
+        "roles": [],
+        "id": "446797855500271616",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "icon_map_meagher_valley",
+        "roles": [],
+        "id": "446797855529893898",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "party_parrot",
+        "roles": [],
+        "id": "560604244630306817",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "swine_bovine",
+        "roles": [],
+        "id": "637082693687050260",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "three",
+        "roles": [],
+        "id": "677644926741250104",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "this",
+        "roles": [],
+        "id": "687363616760135701",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "spinning_thinker",
+        "roles": [],
+        "id": "687364826032635989",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      }
+    ],
+    "emoji_count": 38,
+    "primary_category_id": 1,
+    "primary_category": {
+      "id": 1,
+      "name": {
+        "default": "Gaming",
+        "localizations": {
+          "de": "Gaming",
+          "fr": "Gaming",
+          "ru": "\u0418\u0433\u0440\u044b"
+        }
+      },
+      "is_primary": true
+    },
+    "categories": [
+      {
+        "id": 30,
+        "name": {
+          "default": "LFG",
+          "localizations": {
+            "de": "LFG",
+            "fr": "LFG",
+            "ru": "\u041f\u043e\u0438\u0441\u043a \u0433\u0440\u0443\u043f\u043f\u044b"
+          }
+        },
+        "is_primary": false
+      },
+      {
+        "id": 3,
+        "name": {
+          "default": "Entertainment",
+          "localizations": {
+            "de": "Unterhaltung",
+            "fr": "Divertissements",
+            "ru": "\u0420\u0430\u0437\u0432\u043b\u0435\u0447\u0435\u043d\u0438\u0435"
+          }
+        },
+        "is_primary": true
+      },
+      {
+        "id": 1,
+        "name": {
+          "default": "Gaming",
+          "localizations": {
+            "de": "Gaming",
+            "fr": "Gaming",
+            "ru": "\u0418\u0433\u0440\u044b"
+          }
+        },
+        "is_primary": true
+      }
+    ],
+    "keywords": [
+      "State of Decay",
+      "State of Decay 2",
+      "SoD2",
+      "SoD",
+      "Juggernaut edition",
+      "Undead Labs",
+      "State of Decay 3",
+      "Xbox",
+      "Game Pass",
+      "Steam"
+    ],
+    "vanity_url_code": "stateofdecay",
+    "applications": [
+      {
+        "id": "558062085804916745",
+        "name": {
+          "default": "State of Decay 2"
+        },
+        "aliases": [
+          "State of Decay 2"
+        ],
+        "publishers": [
+          {
+            "id": "521816504824758295",
+            "name": "Microsoft Studios"
+          }
+        ],
+        "developers": [
+          {
+            "id": "521816505252446228",
+            "name": "Undead Labs"
+          }
+        ]
+      }
+    ]
+  },
+  "423075122610700288": {
+    "id": "423075122610700288",
+    "name": "Sea of Thieves",
+    "description": "Welcome to our Official Discord Server. Sea of Thieves is available on Xbox One, Windows 10 and Steam!",
+    "icon": "cccac054b05aee98280eb19d8e095f49",
+    "splash": "e6022f7d944fa1070dbc4bbc1eee7396",
+    "banner": "83d59e38448501d47d88c119402076e6",
+    "features": [
+      "ANIMATED_ICON",
+      "BANNER",
+      "COMMUNITY",
+      "DISCOVERABLE",
+      "FEATURABLE",
+      "INVITE_SPLASH",
+      "MORE_EMOJI",
+      "NEWS",
+      "PREVIEW_ENABLED",
+      "VANITY_URL",
+      "VERIFIED",
+      "VIP_REGIONS",
+      "WELCOME_SCREEN_ENABLED"
+    ],
+    "approximate_presence_count": 55381,
+    "approximate_member_count": 178115,
+    "premium_subscription_count": 103,
+    "preferred_locale": "en-US",
+    "auto_removed": false,
+    "discovery_splash": "83d59e38448501d47d88c119402076e6",
+    "emojis": [
+      {
+        "name": "Tale5",
+        "roles": [],
+        "id": "703777701546295316",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "Tale6",
+        "roles": [],
+        "id": "703777720512938076",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "Tale7",
+        "roles": [],
+        "id": "703777751521427557",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "Tale8",
+        "roles": [],
+        "id": "703777771922522202",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "Tale9",
+        "roles": [],
+        "id": "703777792042467348",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "Tale10",
+        "roles": [],
+        "id": "703777811705364480",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "Tale11",
+        "roles": [],
+        "id": "703777833519939687",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "Wilds",
+        "roles": [],
+        "id": "703777859017375775",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "grogclink",
+        "roles": [],
+        "id": "705167579379138641",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "ancientterror",
+        "roles": [],
+        "id": "706490115157131274",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "crestedqueen",
+        "roles": [],
+        "id": "706490134953984000",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "hungeringone",
+        "roles": [],
+        "id": "706490153060794468",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "shadowmaw",
+        "roles": [],
+        "id": "706490171603943475",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "shroudedghost",
+        "roles": [],
+        "id": "706490418598248480",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "reaper",
+        "roles": [],
+        "id": "707361247468978227",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "goldcoin",
+        "roles": [],
+        "id": "709727355459076227",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "doublooncoin",
+        "roles": [],
+        "id": "709727355760803890",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "ancientcoin",
+        "roles": [],
+        "id": "709727355777712138",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "krakengrog",
+        "roles": [],
+        "id": "709727417580650549",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "EmissaryReaper",
+        "roles": [],
+        "id": "721968302431142029",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "EmissaryOrder",
+        "roles": [],
+        "id": "721968304037822524",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "EmissaryMerchant",
+        "roles": [],
+        "id": "721968304205594686",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "EmissaryGold",
+        "roles": [],
+        "id": "721968304255795282",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "EmissaryAthena",
+        "roles": [],
+        "id": "721968304402726963",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "FlameheartRage",
+        "roles": [],
+        "id": "725684231870742611",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "CoolStoryMerrick",
+        "roles": [],
+        "id": "746908751730049076",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "RamseyLUL",
+        "roles": [],
+        "id": "746908780037668964",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "rare",
+        "roles": [],
+        "id": "751642350203437099",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "SoTDog",
+        "roles": [],
+        "id": "753452279679418458",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "AngryBoom",
+        "roles": [],
+        "id": "754176118906552422",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      }
+    ],
+    "emoji_count": 121,
+    "primary_category_id": 1,
+    "primary_category": {
+      "id": 1,
+      "name": {
+        "default": "Gaming",
+        "localizations": {
+          "de": "Gaming",
+          "fr": "Gaming",
+          "ru": "\u0418\u0433\u0440\u044b"
+        }
+      },
+      "is_primary": true
+    },
+    "categories": [
+      {
+        "id": 30,
+        "name": {
+          "default": "LFG",
+          "localizations": {
+            "de": "LFG",
+            "fr": "LFG",
+            "ru": "\u041f\u043e\u0438\u0441\u043a \u0433\u0440\u0443\u043f\u043f\u044b"
+          }
+        },
+        "is_primary": false
+      },
+      {
+        "id": 1,
+        "name": {
+          "default": "Gaming",
+          "localizations": {
+            "de": "Gaming",
+            "fr": "Gaming",
+            "ru": "\u0418\u0433\u0440\u044b"
+          }
+        },
+        "is_primary": true
+      }
+    ],
+    "keywords": [
+      "SoT",
+      "Sea of Thieves"
+    ],
+    "vanity_url_code": "seaofthieves",
+    "applications": [
+      {
+        "id": "535371564850479134",
+        "name": {
+          "default": "Sea of Thieves"
+        },
+        "aliases": [],
+        "publishers": [
+          {
+            "id": "521816504824758295",
+            "name": "Microsoft Studios"
+          }
+        ],
+        "developers": [
+          {
+            "id": "524351477704032270",
+            "name": "Rare, Ltd."
+          }
+        ]
+      }
+    ]
+  },
+  "428691939861463042": {
+    "id": "428691939861463042",
+    "name": "Forza Official",
+    "description": "The official Discord server for the Forza Motorsport and Forza Horizon series of videogames for Xbox and Windows 10 PCs",
+    "icon": "efe7a8c5492bcb2fac8e78fb3425196c",
+    "splash": "a7f8610860605030e9e85d94ec2f9136",
+    "banner": "8e64691c11d7263a75be17fbf2b15afa",
+    "features": [
+      "ANIMATED_ICON",
+      "BANNER",
+      "COMMUNITY",
+      "DISCOVERABLE",
+      "FEATURABLE",
+      "INVITE_SPLASH",
+      "NEWS",
+      "PREVIEW_ENABLED",
+      "VANITY_URL",
+      "VERIFIED",
+      "VIP_REGIONS",
+      "WELCOME_SCREEN_ENABLED"
+    ],
+    "approximate_presence_count": 6311,
+    "approximate_member_count": 32310,
+    "premium_subscription_count": 20,
+    "preferred_locale": "en-US",
+    "auto_removed": false,
+    "discovery_splash": "a7f8610860605030e9e85d94ec2f9136",
+    "emojis": [
+      {
+        "name": "HAAHA",
+        "roles": [],
+        "id": "637436190387077159",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "tommy",
+        "roles": [],
+        "id": "646503129533251594",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "supra",
+        "roles": [],
+        "id": "646621142991503360",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "RAMThink",
+        "roles": [],
+        "id": "648572286131240970",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "shannon",
+        "roles": [],
+        "id": "648664629869805580",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "pin",
+        "roles": [],
+        "id": "654728343979294720",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "flipmode",
+        "roles": [],
+        "id": "655668582822182943",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "liminator",
+        "roles": [],
+        "id": "657267570889457682",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "Eliminator",
+        "roles": [],
+        "id": "657268918238445578",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "trueno",
+        "roles": [],
+        "id": "666402199156424757",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "lfa",
+        "roles": [],
+        "id": "677447605546123287",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "submitaticket",
+        "roles": [],
+        "id": "699601086582882304",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "SupThonk",
+        "roles": [],
+        "id": "720999067437760572",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "BatSignal",
+        "roles": [],
+        "id": "721001500629008424",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "NitroHi",
+        "roles": [],
+        "id": "721002352680632380",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "Thonkingsegg",
+        "roles": [],
+        "id": "721005229524647966",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "anyway",
+        "roles": [],
+        "id": "721010593120780291",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "ohno",
+        "roles": [],
+        "id": "721010614964846722",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "AE86",
+        "roles": [],
+        "id": "733330589628760115",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "P30",
+        "roles": [],
+        "id": "735936215454580827",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "blimey",
+        "roles": [],
+        "id": "737802470079856721",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "mollins",
+        "roles": [],
+        "id": "737802636241272932",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "mrloaf",
+        "roles": [],
+        "id": "737802686707138560",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "laughingcup",
+        "roles": [],
+        "id": "737802728880734301",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "bronco",
+        "roles": [],
+        "id": "748191885293650041",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "miata",
+        "roles": [],
+        "id": "748191917195657237",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "PeelP50",
+        "roles": [],
+        "id": "748194879640961071",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "PeelT",
+        "roles": [],
+        "id": "748204787077480610",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "playgroundgames",
+        "roles": [],
+        "id": "751938194773245994",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "turn10",
+        "roles": [],
+        "id": "751938253858275430",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      }
+    ],
+    "emoji_count": 67,
+    "primary_category_id": 0,
+    "primary_category": {
+      "id": 0,
+      "name": {
+        "default": "General"
+      },
+      "is_primary": true
+    },
+    "categories": [
+      {
+        "id": 0,
+        "name": {
+          "default": "General"
+        },
+        "is_primary": true
+      }
+    ],
+    "keywords": null,
+    "vanity_url_code": "forza",
+    "applications": [
+      {
+        "id": "496761344603979796",
+        "name": {
+          "default": "Forza Motorsport 7"
+        },
+        "aliases": [],
+        "publishers": [
+          {
+            "id": "521816504824758295",
+            "name": "Microsoft Studios"
+          }
+        ],
+        "developers": [
+          {
+            "id": "521816679085506591",
+            "name": "Turn 10 Studios"
+          }
+        ]
+      }
+    ]
+  },
+  "471722331820130324": {
+    "id": "471722331820130324",
+    "name": "Halo",
+    "description": "The official Discord server of 343 Industries, developers of Halo.",
+    "icon": "f7de99abc1f9b1efc6a6e23976ec504c",
+    "splash": "a86916a5afd80372d00480afc3e53901",
+    "banner": "a86916a5afd80372d00480afc3e53901",
+    "features": [
+      "ANIMATED_ICON",
+      "BANNER",
+      "COMMUNITY",
+      "DISCOVERABLE",
+      "ENABLED_DISCOVERABLE_BEFORE",
+      "FEATURABLE",
+      "INVITE_SPLASH",
+      "NEWS",
+      "PARTNERED",
+      "PREVIEW_ENABLED",
+      "VANITY_URL",
+      "VERIFIED",
+      "VIP_REGIONS",
+      "WELCOME_SCREEN_ENABLED"
+    ],
+    "approximate_presence_count": 30317,
+    "approximate_member_count": 91574,
+    "premium_subscription_count": 31,
+    "preferred_locale": "en-US",
+    "auto_removed": false,
+    "discovery_splash": "a86916a5afd80372d00480afc3e53901",
+    "emojis": [
+      {
+        "name": "triple",
+        "roles": [],
+        "id": "644349294400503847",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "overkill",
+        "roles": [],
+        "id": "644349294547173389",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "double",
+        "roles": [],
+        "id": "644349295515926538",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "killtacular",
+        "roles": [],
+        "id": "644349296170369034",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "mccpizza",
+        "roles": [],
+        "id": "644349432204099584",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "scorpio",
+        "roles": [],
+        "id": "644349514945265666",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "headshot",
+        "roles": [],
+        "id": "644351324296577034",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "killamanjaro",
+        "roles": [],
+        "id": "644361846626975775",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "killpocalypse",
+        "roles": [],
+        "id": "644361846932897822",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "killtastrophe",
+        "roles": [],
+        "id": "644361847088087060",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "kill",
+        "roles": [],
+        "id": "644361847130030118",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "killionaire",
+        "roles": [],
+        "id": "644361847155327023",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "firststrike",
+        "roles": [],
+        "id": "644579802246021120",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "CSGOAssassin",
+        "roles": [],
+        "id": "651157993404235798",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "CSGOMister",
+        "roles": [],
+        "id": "651157993572007953",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "CSGOChief",
+        "roles": [],
+        "id": "651162730186670090",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "CSGO117",
+        "roles": [],
+        "id": "651164252190801981",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "CSGOSpartan",
+        "roles": [],
+        "id": "651164252278620191",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "CSGOSkull",
+        "roles": [],
+        "id": "651164252673015828",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "CSGOKilljoy",
+        "roles": [],
+        "id": "651164252761227294",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "CSGOLegendary",
+        "roles": [],
+        "id": "651164252891119655",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "CSGONoble",
+        "roles": [],
+        "id": "651164252920479773",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "CSGOExterm",
+        "roles": [],
+        "id": "651164253788569600",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "PrideChief",
+        "roles": [],
+        "id": "717035068115386381",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "HypeChief",
+        "roles": [],
+        "id": "735870107649048627",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "craighearts",
+        "roles": [],
+        "id": "738474907486388275",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "happycraig",
+        "roles": [],
+        "id": "738474995826819122",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "pilot",
+        "roles": [],
+        "id": "740988524849004664",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "supercool",
+        "roles": [],
+        "id": "750543267581395046",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "amongchief",
+        "roles": [],
+        "id": "760600494715437066",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      }
+    ],
+    "emoji_count": 88,
+    "primary_category_id": 1,
+    "primary_category": {
+      "id": 1,
+      "name": {
+        "default": "Gaming",
+        "localizations": {
+          "de": "Gaming",
+          "fr": "Gaming",
+          "ru": "\u0418\u0433\u0440\u044b"
+        }
+      },
+      "is_primary": true
+    },
+    "categories": [
+      {
+        "id": 15,
+        "name": {
+          "default": "Esports",
+          "localizations": {
+            "de": "E-Sports",
+            "fr": "eSport",
+            "ru": "\u041a\u0438\u0431\u0435\u0440\u0441\u043f\u043e\u0440\u0442"
+          }
+        },
+        "is_primary": false
+      },
+      {
+        "id": 30,
+        "name": {
+          "default": "LFG",
+          "localizations": {
+            "de": "LFG",
+            "fr": "LFG",
+            "ru": "\u041f\u043e\u0438\u0441\u043a \u0433\u0440\u0443\u043f\u043f\u044b"
+          }
+        },
+        "is_primary": false
+      },
+      {
+        "id": 3,
+        "name": {
+          "default": "Entertainment",
+          "localizations": {
+            "de": "Unterhaltung",
+            "fr": "Divertissements",
+            "ru": "\u0420\u0430\u0437\u0432\u043b\u0435\u0447\u0435\u043d\u0438\u0435"
+          }
+        },
+        "is_primary": true
+      },
+      {
+        "id": 1,
+        "name": {
+          "default": "Gaming",
+          "localizations": {
+            "de": "Gaming",
+            "fr": "Gaming",
+            "ru": "\u0418\u0433\u0440\u044b"
+          }
+        },
+        "is_primary": true
+      }
+    ],
+    "keywords": [
+      "Halo",
+      "Xbox",
+      "343 Industries",
+      "Master Chief",
+      "Cortana",
+      "Halo Infinite"
+    ],
+    "vanity_url_code": "halo",
+    "applications": [
+      {
+        "id": "456022848214138884",
+        "name": {
+          "default": "Halo Wars: Definitive Edition"
+        },
+        "aliases": [],
+        "publishers": [
+          {
+            "id": "521816567940513807",
+            "name": "Ensemble Studios"
+          }
+        ],
+        "developers": []
+      }
+    ]
+  },
+  "579770991056519194": {
+    "id": "579770991056519194",
+    "name": "MINECRAFT DUNGEONS",
+    "description": "The official Minecraft Dungeons Discord!",
+    "icon": "9c00f4fbf46d91cf9f3dfa350da931e1",
+    "splash": "dcb310c00e2266563904a078fedf0d39",
+    "banner": "bdf0027028550f4f4efb37f36e001e95",
+    "features": [
+      "ANIMATED_ICON",
+      "BANNER",
+      "COMMUNITY",
+      "DISCOVERABLE",
+      "ENABLED_DISCOVERABLE_BEFORE",
+      "INVITE_SPLASH",
+      "NEWS",
+      "PREVIEW_ENABLED",
+      "VANITY_URL",
+      "VERIFIED",
+      "VIP_REGIONS",
+      "WELCOME_SCREEN_ENABLED"
+    ],
+    "approximate_presence_count": 17935,
+    "approximate_member_count": 93376,
+    "premium_subscription_count": 19,
+    "preferred_locale": "en-US",
+    "auto_removed": false,
+    "discovery_splash": "bdf0027028550f4f4efb37f36e001e95",
+    "emojis": [
+      {
+        "name": "emerald",
+        "roles": [],
+        "id": "701890728783118346",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "flaming_quiver",
+        "roles": [],
+        "id": "701895284233338961",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "wind_horn",
+        "roles": [],
+        "id": "701895973357617238",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "boots_swiftness",
+        "roles": [],
+        "id": "701896233584820244",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "fishing_rod",
+        "roles": [],
+        "id": "701896629799616593",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "light_feather",
+        "roles": [],
+        "id": "702587179683152076",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "thinking_monstrosity",
+        "roles": [],
+        "id": "710463365985730620",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "sad_monstrosity",
+        "roles": [],
+        "id": "710562788610801775",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "hug_monstrosity",
+        "roles": [],
+        "id": "710875746586984570",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "bingo_monstrosity",
+        "roles": [],
+        "id": "710875746750562335",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "chicken",
+        "roles": [],
+        "id": "711964777265758209",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "parrot",
+        "roles": [],
+        "id": "711964777366290442",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "archie_triggered",
+        "roles": [],
+        "id": "713540751317008505",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "switch",
+        "roles": [],
+        "id": "715154809455509564",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "xbox",
+        "roles": [],
+        "id": "715154809535332412",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "windows",
+        "roles": [],
+        "id": "715154809564430406",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "playstation",
+        "roles": [],
+        "id": "715154809615024148",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "TormentQuiver",
+        "roles": [],
+        "id": "715383136355352586",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "radiance",
+        "roles": [],
+        "id": "728819202583953498",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "dungeons_bounce",
+        "roles": [],
+        "id": "746444550515720215",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "arctic_fox",
+        "roles": [],
+        "id": "750265453724696667",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "iron_golem_kit",
+        "roles": [],
+        "id": "750717180231942196",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "whirlwind",
+        "roles": [],
+        "id": "752404574270259350",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "fighters_bindings",
+        "roles": [],
+        "id": "752404575025102857",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "hero_cape",
+        "roles": [],
+        "id": "752406650689814618",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "necromancer_stare",
+        "roles": [],
+        "id": "752412663639834635",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "blacksmith_intensifies",
+        "roles": [],
+        "id": "753290611645218896",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "bee",
+        "roles": [],
+        "id": "754719433016082482",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "dynamo_melee",
+        "roles": [],
+        "id": "756948505175785502",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "upvote",
+        "roles": [],
+        "id": "759510169213468713",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      }
+    ],
+    "emoji_count": 62,
+    "primary_category_id": 1,
+    "primary_category": {
+      "id": 1,
+      "name": {
+        "default": "Gaming",
+        "localizations": {
+          "de": "Gaming",
+          "fr": "Gaming",
+          "ru": "\u0418\u0433\u0440\u044b"
+        }
+      },
+      "is_primary": true
+    },
+    "categories": [
+      {
+        "id": 30,
+        "name": {
+          "default": "LFG",
+          "localizations": {
+            "de": "LFG",
+            "fr": "LFG",
+            "ru": "\u041f\u043e\u0438\u0441\u043a \u0433\u0440\u0443\u043f\u043f\u044b"
+          }
+        },
+        "is_primary": false
+      },
+      {
+        "id": 39,
+        "name": {
+          "default": "Fandom",
+          "localizations": {
+            "de": "Fan-Community",
+            "fr": "Communaut\u00e9 de fans",
+            "ru": "\u0424\u0430\u043d\u0430\u0442\u0441\u043a\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u0441\u0442\u0432\u043e"
+          }
+        },
+        "is_primary": false
+      },
+      {
+        "id": 14,
+        "name": {
+          "default": "General Chatting",
+          "localizations": {
+            "de": "Allgemeine Chats",
+            "fr": "Discussion g\u00e9n\u00e9rale",
+            "ru": "\u041e\u0431\u0449\u0435\u043d\u0438\u0435"
+          }
+        },
+        "is_primary": true
+      },
+      {
+        "id": 1,
+        "name": {
+          "default": "Gaming",
+          "localizations": {
+            "de": "Gaming",
+            "fr": "Gaming",
+            "ru": "\u0418\u0433\u0440\u044b"
+          }
+        },
+        "is_primary": true
+      }
+    ],
+    "keywords": [
+      "MC",
+      "Minecraft",
+      "Dungeons",
+      "Mojang",
+      "MCD",
+      "mine",
+      "craft",
+      "official",
+      "Studios",
+      "Mojang Studios"
+    ],
+    "vanity_url_code": "minecraftdungeons"
+  },
+  "585165441790509094": {
+    "id": "585165441790509094",
+    "name": "Age of Empires",
+    "description": "The official Age of Empires & Age of Mythology community! Building empires from the ancient world to the modern age!",
+    "icon": "13b24d97cf448e901f526b77c99ee588",
+    "splash": "ccc70c0a20ca70a27635b7305006cd35",
+    "banner": "1a2bbc597114c2810a79b93c5d41dc06",
+    "features": [
+      "ANIMATED_ICON",
+      "BANNER",
+      "COMMUNITY",
+      "DISCOVERABLE",
+      "FEATURABLE",
+      "INVITE_SPLASH",
+      "NEWS",
+      "PREVIEW_ENABLED",
+      "VANITY_URL",
+      "VERIFIED",
+      "VIP_REGIONS",
+      "WELCOME_SCREEN_ENABLED"
+    ],
+    "approximate_presence_count": 7008,
+    "approximate_member_count": 33462,
+    "premium_subscription_count": 23,
+    "preferred_locale": "en-US",
+    "auto_removed": false,
+    "discovery_splash": "ccc70c0a20ca70a27635b7305006cd35",
+    "emojis": [
+      {
+        "name": "alfred",
+        "roles": [],
+        "id": "651575856929701908",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "paladin",
+        "roles": [],
+        "id": "651576027859910672",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "relic",
+        "roles": [],
+        "id": "651576075884953620",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "SantaRyz0n",
+        "roles": [],
+        "id": "651576159334563850",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "aoeSanta2019",
+        "roles": [],
+        "id": "656622550373236761",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "aoePetard2019",
+        "roles": [],
+        "id": "656622803600146474",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "helmDE",
+        "roles": [],
+        "id": "663792037677760544",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "cuman",
+        "roles": [],
+        "id": "663792567980392477",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "lnyGuitarist2020",
+        "roles": [],
+        "id": "669685661141434388",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "lnyGate2020",
+        "roles": [],
+        "id": "669685731764994059",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "ageStern",
+        "roles": [],
+        "id": "672941498941046814",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "ageSmiley",
+        "roles": [],
+        "id": "672941790776524822",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "ageDetermined",
+        "roles": [],
+        "id": "672943023255977994",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "ageSmirk",
+        "roles": [],
+        "id": "672945114997325826",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "ageSlightSmile",
+        "roles": [],
+        "id": "672945390047330304",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "ageCrazy",
+        "roles": [],
+        "id": "672945441616297995",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "kingly",
+        "roles": [],
+        "id": "672957300968914954",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "woloblue",
+        "roles": [],
+        "id": "676528776213037056",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "wologreen",
+        "roles": [],
+        "id": "676562816488177690",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "wologrey",
+        "roles": [],
+        "id": "676562816697892879",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "wolopurple",
+        "roles": [],
+        "id": "676562816765001738",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "wolocyan",
+        "roles": [],
+        "id": "676562816962002965",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "woloorange",
+        "roles": [],
+        "id": "676562817251278882",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "wolored",
+        "roles": [],
+        "id": "676562817289158678",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "woloyellow",
+        "roles": [],
+        "id": "676562817792606218",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "stormy",
+        "roles": [],
+        "id": "684480103413055564",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "ageSpring",
+        "roles": [],
+        "id": "694431748309778452",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "RandomMap",
+        "roles": [],
+        "id": "730578707793838210",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "Arabia",
+        "roles": [],
+        "id": "730579951496986665",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "capy",
+        "roles": [],
+        "id": "751563352748064939",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      }
+    ],
+    "emoji_count": 76,
+    "primary_category_id": 1,
+    "primary_category": {
+      "id": 1,
+      "name": {
+        "default": "Gaming",
+        "localizations": {
+          "de": "Gaming",
+          "fr": "Gaming",
+          "ru": "\u0418\u0433\u0440\u044b"
+        }
+      },
+      "is_primary": true
+    },
+    "categories": [
+      {
+        "id": 15,
+        "name": {
+          "default": "Esports",
+          "localizations": {
+            "de": "E-Sports",
+            "fr": "eSport",
+            "ru": "\u041a\u0438\u0431\u0435\u0440\u0441\u043f\u043e\u0440\u0442"
+          }
+        },
+        "is_primary": false
+      },
+      {
+        "id": 30,
+        "name": {
+          "default": "LFG",
+          "localizations": {
+            "de": "LFG",
+            "fr": "LFG",
+            "ru": "\u041f\u043e\u0438\u0441\u043a \u0433\u0440\u0443\u043f\u043f\u044b"
+          }
+        },
+        "is_primary": false
+      },
+      {
+        "id": 31,
+        "name": {
+          "default": "Customer Support",
+          "localizations": {
+            "de": "Kundensupport",
+            "fr": "Assistance client\u00e8le",
+            "ru": "\u0421\u043b\u0443\u0436\u0431\u0430 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u0438"
+          }
+        },
+        "is_primary": false
+      },
+      {
+        "id": 33,
+        "name": {
+          "default": "Events",
+          "localizations": {
+            "de": "Events",
+            "fr": "\u00c9v\u00e9nements",
+            "ru": "\u041c\u0435\u0440\u043e\u043f\u0440\u0438\u044f\u0442\u0438\u044f"
+          }
+        },
+        "is_primary": false
+      },
+      {
+        "id": 3,
+        "name": {
+          "default": "Entertainment",
+          "localizations": {
+            "de": "Unterhaltung",
+            "fr": "Divertissements",
+            "ru": "\u0420\u0430\u0437\u0432\u043b\u0435\u0447\u0435\u043d\u0438\u0435"
+          }
+        },
+        "is_primary": true
+      },
+      {
+        "id": 1,
+        "name": {
+          "default": "Gaming",
+          "localizations": {
+            "de": "Gaming",
+            "fr": "Gaming",
+            "ru": "\u0418\u0433\u0440\u044b"
+          }
+        },
+        "is_primary": true
+      }
+    ],
+    "keywords": [
+      "AoE",
+      "AoK",
+      "AoM",
+      "Age of Mythology",
+      "Age of Kings",
+      "AoC"
+    ],
+    "vanity_url_code": "ageofempires"
+  },
+  "646017020412035082": {
+    "id": "646017020412035082",
+    "name": "Microsoft Flight Simulator",
+    "description": "Welcome to the official home of Microsoft Flight Simulator! Come join and fly with us!",
+    "icon": "a_00a3c6e75a05ef0419701e54874e5ad2",
+    "splash": "f286f0b8ac59632045bce5b927c6505b",
+    "banner": "f8fe79fa2c91850ab30fb6db1571e11d",
+    "features": [
+      "ANIMATED_ICON",
+      "BANNER",
+      "COMMUNITY",
+      "DISCOVERABLE",
+      "INVITE_SPLASH",
+      "NEWS",
+      "PREVIEW_ENABLED",
+      "VANITY_URL",
+      "VERIFIED",
+      "VIP_REGIONS",
+      "WELCOME_SCREEN_ENABLED"
+    ],
+    "approximate_presence_count": 13819,
+    "approximate_member_count": 55584,
+    "premium_subscription_count": 163,
+    "preferred_locale": "en-US",
+    "auto_removed": false,
+    "discovery_splash": "c366a4421a4c853a62455b56c44db747",
+    "emojis": [
+      {
+        "name": "bluex",
+        "roles": [],
+        "id": "716049090504294490",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "complaintDept",
+        "roles": [],
+        "id": "716265164453707836",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "NiceMyDude",
+        "roles": [],
+        "id": "716438587041906758",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "RIP",
+        "roles": [],
+        "id": "716439084901597206",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "RIP_GRAVE",
+        "roles": [],
+        "id": "716439239860027392",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "DAM",
+        "roles": [],
+        "id": "716832999672512583",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "Bruh2",
+        "roles": [],
+        "id": "717129245658447913",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "NoU",
+        "roles": [],
+        "id": "717130677639970827",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "thisisfine",
+        "roles": [],
+        "id": "717180553622978621",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "MSFS",
+        "roles": [],
+        "id": "718986367144558634",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "EatenZyonix",
+        "roles": [],
+        "id": "719008134823280721",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "EatenMee6",
+        "roles": [],
+        "id": "719009688791941132",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "EatenSimtom",
+        "roles": [],
+        "id": "719062339995041802",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "Intel",
+        "roles": [],
+        "id": "719589231260860538",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "AMD",
+        "roles": [],
+        "id": "719589515920015371",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "thonk",
+        "roles": [],
+        "id": "720916262116655144",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "cataco",
+        "roles": [],
+        "id": "721144279988305991",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "myman",
+        "roles": [],
+        "id": "721880786927747182",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "Kappa",
+        "roles": [],
+        "id": "727234007561011220",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "pepega",
+        "roles": [],
+        "id": "728465923341549588",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "siren",
+        "roles": [],
+        "id": "728594798977744906",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "ono",
+        "roles": [],
+        "id": "730885581017710744",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "readfaq",
+        "roles": [],
+        "id": "732715128600133743",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "wdk",
+        "roles": [],
+        "id": "732715781892341852",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "Bonzi",
+        "roles": [],
+        "id": "738208174393262162",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "dynoSuccess",
+        "roles": [],
+        "id": "740020496715874334",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "pizza_parrot",
+        "roles": [],
+        "id": "743107636353958051",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "catvibe",
+        "roles": [],
+        "id": "743618911077138592",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "pings",
+        "roles": [],
+        "id": "756917491351027835",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "blue_siren",
+        "roles": [],
+        "id": "761016868202479658",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      }
+    ],
+    "emoji_count": 83,
+    "primary_category_id": 1,
+    "primary_category": {
+      "id": 1,
+      "name": {
+        "default": "Gaming",
+        "localizations": {
+          "de": "Gaming",
+          "fr": "Gaming",
+          "ru": "\u0418\u0433\u0440\u044b"
+        }
+      },
+      "is_primary": true
+    },
+    "categories": [
+      {
+        "id": 1,
+        "name": {
+          "default": "Gaming",
+          "localizations": {
+            "de": "Gaming",
+            "fr": "Gaming",
+            "ru": "\u0418\u0433\u0440\u044b"
+          }
+        },
+        "is_primary": true
+      }
+    ],
+    "keywords": [
+      "flight simulator",
+      "msfs",
+      "fs",
+      "fsim",
+      "flightsim",
+      "aviation",
+      "sim",
+      "microsoft",
+      "asobo",
+      "microsoft flight simulator"
+    ],
+    "vanity_url_code": "msfs"
+  }
+}
