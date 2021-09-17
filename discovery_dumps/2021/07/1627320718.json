@@ -1,0 +1,1006 @@
+{
+  "742765599738036275": {
+    "id": "742765599738036275",
+    "name": "MKBHD",
+    "description": "We're the official community of the Marques Brownlee!",
+    "icon": "981b982c2897da543a7049746bcf11ad",
+    "splash": "3ce699c1464951c6a20fbbcee84e713b",
+    "banner": "180d849bafd1dd1614b164d6684bdc25",
+    "features": [
+      "ANIMATED_ICON",
+      "BANNER",
+      "COMMUNITY",
+      "DISCOVERABLE",
+      "ENABLED_DISCOVERABLE_BEFORE",
+      "INVITE_SPLASH",
+      "MEMBER_VERIFICATION_GATE_ENABLED",
+      "NEWS",
+      "PARTNERED",
+      "PREVIEW_ENABLED",
+      "PRIVATE_THREADS",
+      "SEVEN_DAY_THREAD_ARCHIVE",
+      "THREE_DAY_THREAD_ARCHIVE",
+      "VANITY_URL",
+      "VERIFIED",
+      "VIP_REGIONS",
+      "WELCOME_SCREEN_ENABLED"
+    ],
+    "approximate_presence_count": 9027,
+    "approximate_member_count": 59450,
+    "premium_subscription_count": 88,
+    "preferred_locale": "en-US",
+    "auto_removed": false,
+    "discovery_splash": "1afb47cc308aeedd76c2cabc3df769c8",
+    "emojis": [
+      {
+        "name": "3d_logo",
+        "roles": [],
+        "id": "836684131034988605",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "6color_logo",
+        "roles": [],
+        "id": "836684186735476837",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "logo_bg",
+        "roles": [],
+        "id": "836684224438337577",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "logo_bg_black",
+        "roles": [],
+        "id": "836684273335140353",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "apple_emoji",
+        "roles": [],
+        "id": "836684972702040074",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "Android_Emoji",
+        "roles": [],
+        "id": "836684990024384593",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "mbe",
+        "roles": [],
+        "id": "836685195897339965",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "waveform",
+        "roles": [],
+        "id": "837007684405690400",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "waveform2",
+        "roles": [],
+        "id": "837010543175794709",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "mac",
+        "roles": [],
+        "id": "837768151097671721",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "distortedMarques",
+        "roles": [],
+        "id": "845023652029399040",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "susprisedAndrew",
+        "roles": [],
+        "id": "845025557649424385",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "Davidlazer",
+        "roles": [],
+        "id": "847208693250392134",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "DavidLaugh",
+        "roles": [],
+        "id": "847927545436700702",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "HomerAndrew",
+        "roles": [],
+        "id": "847927562674896917",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "areyousure",
+        "roles": [],
+        "id": "855120946968264724",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "appleheart",
+        "roles": [],
+        "id": "856563018128424970",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "jumping",
+        "roles": [],
+        "id": "856563069924409394",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "timcook",
+        "roles": [],
+        "id": "856563089377853510",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "parrot",
+        "roles": [],
+        "id": "856563118385922079",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "teeth",
+        "roles": [],
+        "id": "856563404666568754",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "siri",
+        "roles": [],
+        "id": "856563892851179530",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "googleassistant",
+        "roles": [],
+        "id": "856563989574844436",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "Isthatwhatyouwanted",
+        "roles": [],
+        "id": "856564132085891131",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "bigbrain",
+        "roles": [],
+        "id": "862016131811246109",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "woah_party_mkbhd",
+        "roles": [],
+        "id": "862016132217962496",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "party_mkbhd",
+        "roles": [],
+        "id": "862016132328587264",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "davidhands",
+        "roles": [],
+        "id": "862680399279554560",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "TaxiMarques",
+        "roles": [],
+        "id": "866745021428137994",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "MacBlack",
+        "roles": [],
+        "id": "866745042390351873",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      }
+    ],
+    "emoji_count": 34,
+    "stickers": [
+      {
+        "name": "marques_grimace",
+        "id": "864986130507497482",
+        "available": true,
+        "guild_id": "742765599738036275",
+        "sort_value": 100,
+        "format_type": 1,
+        "description": null,
+        "tags": "grimacing"
+      },
+      {
+        "name": "david_hands",
+        "id": "864986278884933672",
+        "available": true,
+        "guild_id": "742765599738036275",
+        "sort_value": 100,
+        "format_type": 1,
+        "description": null,
+        "tags": "open_hands"
+      },
+      {
+        "name": "Mac",
+        "id": "865620501937520742",
+        "available": true,
+        "guild_id": "742765599738036275",
+        "sort_value": 100,
+        "format_type": 1,
+        "description": null,
+        "tags": "dog"
+      },
+      {
+        "name": "Mac Black Everything",
+        "id": "865620569083871232",
+        "available": true,
+        "guild_id": "742765599738036275",
+        "sort_value": 100,
+        "format_type": 1,
+        "description": null,
+        "tags": "guide_dog"
+      },
+      {
+        "name": "Taxi Marques",
+        "id": "865627320768266242",
+        "available": true,
+        "guild_id": "742765599738036275",
+        "sort_value": 100,
+        "format_type": 1,
+        "description": null,
+        "tags": "taxi"
+      },
+      {
+        "name": "MarquesDaftPunk",
+        "id": "869238863208538214",
+        "available": true,
+        "guild_id": "742765599738036275",
+        "sort_value": 100,
+        "format_type": 1,
+        "description": null,
+        "tags": "cd"
+      },
+      {
+        "name": "AndrewDaftPunk",
+        "id": "869239074697916456",
+        "available": true,
+        "guild_id": "742765599738036275",
+        "sort_value": 100,
+        "format_type": 1,
+        "description": null,
+        "tags": "dvd"
+      }
+    ],
+    "sticker_count": 7,
+    "primary_category_id": 5,
+    "primary_category": {
+      "id": 5,
+      "name": {
+        "default": "Science & Tech",
+        "localizations": {
+          "de": "Wissenschaft & Technik",
+          "fr": "Science et technologie",
+          "ru": "\u041d\u0430\u0443\u043a\u0430 \u0438 \u0442\u0435\u0445\u043d\u0438\u043a\u0430"
+        }
+      },
+      "is_primary": true
+    },
+    "categories": [
+      {
+        "id": 35,
+        "name": {
+          "default": "Content Creator",
+          "localizations": {
+            "de": "Content Creator",
+            "fr": "Cr\u00e9ateur de contenu",
+            "ru": "\u0421\u043e\u0437\u0434\u0430\u0442\u0435\u043b\u044c \u043a\u043e\u043d\u0442\u0435\u043d\u0442\u0430"
+          }
+        },
+        "is_primary": false
+      },
+      {
+        "id": 5,
+        "name": {
+          "default": "Science & Tech",
+          "localizations": {
+            "de": "Wissenschaft & Technik",
+            "fr": "Science et technologie",
+            "ru": "\u041d\u0430\u0443\u043a\u0430 \u0438 \u0442\u0435\u0445\u043d\u0438\u043a\u0430"
+          }
+        },
+        "is_primary": true
+      },
+      {
+        "id": 46,
+        "name": {
+          "default": "Console"
+        },
+        "is_primary": false
+      },
+      {
+        "id": 22,
+        "name": {
+          "default": "Programming",
+          "localizations": {
+            "de": "Programmieren",
+            "fr": "Programmation",
+            "ru": "\u041f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435"
+          }
+        },
+        "is_primary": false
+      }
+    ],
+    "keywords": [
+      "Marques",
+      "Brownlee",
+      "Youtube",
+      "Tech",
+      "Content Creator"
+    ],
+    "vanity_url_code": "mkbhd"
+  },
+  "827279558314557480": {
+    "id": "827279558314557480",
+    "name": "MrBeast",
+    "description": "The official MrBeast Discord server",
+    "icon": "4784a75e25f09cc02466109b1b792f80",
+    "splash": "2e342562d34c4970399c554a02052ae4",
+    "banner": "67cbb753f7273e0184c65fb55bc92c6e",
+    "features": [
+      "ANIMATED_ICON",
+      "BANNER",
+      "COMMUNITY",
+      "DISCOVERABLE",
+      "ENABLED_DISCOVERABLE_BEFORE",
+      "INVITE_SPLASH",
+      "MEMBER_VERIFICATION_GATE_ENABLED",
+      "NEWS",
+      "PARTNERED",
+      "PREVIEW_ENABLED",
+      "PRIVATE_THREADS",
+      "RELAY_ENABLED",
+      "SEVEN_DAY_THREAD_ARCHIVE",
+      "THREE_DAY_THREAD_ARCHIVE",
+      "VANITY_URL",
+      "VERIFIED",
+      "VIP_REGIONS",
+      "WELCOME_SCREEN_ENABLED"
+    ],
+    "approximate_presence_count": 29973,
+    "approximate_member_count": 182239,
+    "premium_subscription_count": 168,
+    "preferred_locale": "en-US",
+    "auto_removed": false,
+    "discovery_splash": "786337a6850d49e48992299efae1ac55",
+    "emojis": [
+      {
+        "name": "mb",
+        "roles": [],
+        "id": "838771272833957928",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "mbg",
+        "roles": [],
+        "id": "838771273194274886",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "mbp",
+        "roles": [],
+        "id": "838771273404121148",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "mbr",
+        "roles": [],
+        "id": "838771274226466876",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "mbs",
+        "roles": [],
+        "id": "838771274493722704",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "bonkedpog",
+        "roles": [],
+        "id": "845483352831950848",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "KarlBog",
+        "roles": [],
+        "id": "845483507770064946",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "chandlerAH",
+        "roles": [],
+        "id": "845483760426549268",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "MiningAway",
+        "roles": [],
+        "id": "845488206211973130",
+        "require_colons": true,
+        "managed": false,
+        "animated": true,
+        "available": true
+      },
+      {
+        "name": "chrisW",
+        "roles": [],
+        "id": "852271247043198986",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "chrisEW",
+        "roles": [],
+        "id": "852271276080365630",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      }
+    ],
+    "emoji_count": 11,
+    "stickers": [],
+    "sticker_count": 0,
+    "primary_category_id": 0,
+    "primary_category": {
+      "id": 0,
+      "name": {
+        "default": "General"
+      },
+      "is_primary": true
+    },
+    "categories": [
+      {
+        "id": 0,
+        "name": {
+          "default": "General"
+        },
+        "is_primary": true
+      }
+    ],
+    "keywords": [],
+    "vanity_url_code": "mrbeast"
+  },
+  "844669718288007198": {
+    "id": "844669718288007198",
+    "name": "Grimes Metaverse Super Beta",
+    "description": "",
+    "icon": "8bc185f51ee25ebd3acc4ac58c8dab01",
+    "splash": "24950c581831eea0820e4374490d3356",
+    "banner": "a2bb0b5f9184c0cb9246ca0050773c02",
+    "features": [
+      "ANIMATED_ICON",
+      "BANNER",
+      "COMMUNITY",
+      "DISCOVERABLE",
+      "ENABLED_DISCOVERABLE_BEFORE",
+      "INVITE_SPLASH",
+      "MEMBER_VERIFICATION_GATE_ENABLED",
+      "NEWS",
+      "PREVIEW_ENABLED",
+      "PRIVATE_THREADS",
+      "SEVEN_DAY_THREAD_ARCHIVE",
+      "THREE_DAY_THREAD_ARCHIVE",
+      "VANITY_URL",
+      "VERIFIED"
+    ],
+    "approximate_presence_count": 2425,
+    "approximate_member_count": 14611,
+    "premium_subscription_count": 133,
+    "preferred_locale": "en-US",
+    "auto_removed": false,
+    "discovery_splash": "ad7b13811204170de10b07de8e02b99b",
+    "emojis": [],
+    "emoji_count": 0,
+    "stickers": [],
+    "sticker_count": 0,
+    "primary_category_id": 2,
+    "primary_category": {
+      "id": 2,
+      "name": {
+        "default": "Music",
+        "localizations": {
+          "de": "Musik",
+          "fr": "Musique",
+          "ru": "\u041c\u0443\u0437\u044b\u043a\u0430"
+        }
+      },
+      "is_primary": true
+    },
+    "categories": [
+      {
+        "id": 2,
+        "name": {
+          "default": "Music",
+          "localizations": {
+            "de": "Musik",
+            "fr": "Musique",
+            "ru": "\u041c\u0443\u0437\u044b\u043a\u0430"
+          }
+        },
+        "is_primary": true
+      }
+    ],
+    "keywords": [],
+    "vanity_url_code": "grimessalon"
+  },
+  "849638909319053333": {
+    "id": "849638909319053333",
+    "name": "Awkwafina",
+    "description": "",
+    "icon": "1880f4cb52f5cf37d472e643f0368831",
+    "splash": "549bec83eb8c5162f9428d4bc1cd51f9",
+    "banner": "58485f82d963894b2ff30a0e6a95b0eb",
+    "features": [
+      "ANIMATED_ICON",
+      "BANNER",
+      "COMMUNITY",
+      "DISCOVERABLE",
+      "ENABLED_DISCOVERABLE_BEFORE",
+      "INVITE_SPLASH",
+      "NEWS",
+      "PARTNERED",
+      "PREVIEW_ENABLED",
+      "THREE_DAY_THREAD_ARCHIVE",
+      "VANITY_URL",
+      "VERIFIED",
+      "VIP_REGIONS",
+      "WELCOME_SCREEN_ENABLED"
+    ],
+    "approximate_presence_count": 185,
+    "approximate_member_count": 592,
+    "premium_subscription_count": 2,
+    "preferred_locale": "en-US",
+    "auto_removed": false,
+    "discovery_splash": "58485f82d963894b2ff30a0e6a95b0eb",
+    "emojis": [],
+    "emoji_count": 0,
+    "stickers": [],
+    "sticker_count": 0,
+    "primary_category_id": 0,
+    "primary_category": {
+      "id": 0,
+      "name": {
+        "default": "General"
+      },
+      "is_primary": true
+    },
+    "categories": [
+      {
+        "id": 0,
+        "name": {
+          "default": "General"
+        },
+        "is_primary": true
+      }
+    ],
+    "keywords": [],
+    "vanity_url_code": "awkwafina"
+  },
+  "854151628700909588": {
+    "id": "854151628700909588",
+    "name": "J. Balvin",
+    "description": "J Balvin is a Colombian reggaeton singer and is one of the best-selling Latin music artists!",
+    "icon": "f7187eed3029c16ab660c78cc79714d8",
+    "splash": null,
+    "banner": "aa30d411793fab4bbe618ee04453fdc4",
+    "features": [
+      "ANIMATED_ICON",
+      "BANNER",
+      "COMMUNITY",
+      "DISCOVERABLE",
+      "ENABLED_DISCOVERABLE_BEFORE",
+      "INVITE_SPLASH",
+      "NEWS",
+      "PREVIEW_ENABLED",
+      "THREE_DAY_THREAD_ARCHIVE",
+      "VANITY_URL",
+      "VERIFIED",
+      "VIP_REGIONS",
+      "WELCOME_SCREEN_ENABLED"
+    ],
+    "approximate_presence_count": 487,
+    "approximate_member_count": 1689,
+    "premium_subscription_count": 14,
+    "preferred_locale": "en-US",
+    "auto_removed": false,
+    "discovery_splash": "3edcc0fc6892421e07bc6b1fa7c5326e",
+    "emojis": [
+      {
+        "name": "jb_colores",
+        "roles": [],
+        "id": "855413369859342366",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "jb_pride",
+        "roles": [],
+        "id": "855413579494719508",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "jb_oasis",
+        "roles": [],
+        "id": "855414214008635402",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "jb_carita",
+        "roles": [],
+        "id": "855414306182266880",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "JB_applemusic",
+        "roles": [],
+        "id": "855500477008576524",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "JB_instagram",
+        "roles": [],
+        "id": "855500477092593665",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "JB_spotify",
+        "roles": [],
+        "id": "855500477425123340",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "JB_twitter",
+        "roles": [],
+        "id": "855500477582934056",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "JB_youtube",
+        "roles": [],
+        "id": "855500477662756884",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "jb_nube",
+        "roles": [],
+        "id": "856582477522796585",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "jb_rayo",
+        "roles": [],
+        "id": "857765085720215593",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "jb_rayo_pink",
+        "roles": [],
+        "id": "858069355619549246",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "jb",
+        "roles": [],
+        "id": "858069355937398794",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "jb_lego",
+        "roles": [],
+        "id": "858069355970297876",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "jb_rayo_green",
+        "roles": [],
+        "id": "858069356009488384",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "jb_world",
+        "roles": [],
+        "id": "858069356168871986",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "jb_carita",
+        "roles": [],
+        "id": "858069356168871987",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "jb_smile",
+        "roles": [],
+        "id": "858069356528271401",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      },
+      {
+        "name": "jbnostroke",
+        "roles": [],
+        "id": "858069980658139147",
+        "require_colons": true,
+        "managed": false,
+        "animated": false,
+        "available": true
+      }
+    ],
+    "emoji_count": 19,
+    "stickers": [],
+    "sticker_count": 0,
+    "primary_category_id": 2,
+    "primary_category": {
+      "id": 2,
+      "name": {
+        "default": "Music",
+        "localizations": {
+          "de": "Musik",
+          "fr": "Musique",
+          "ru": "\u041c\u0443\u0437\u044b\u043a\u0430"
+        }
+      },
+      "is_primary": true
+    },
+    "categories": [
+      {
+        "id": 2,
+        "name": {
+          "default": "Music",
+          "localizations": {
+            "de": "Musik",
+            "fr": "Musique",
+            "ru": "\u041c\u0443\u0437\u044b\u043a\u0430"
+          }
+        },
+        "is_primary": true
+      },
+      {
+        "id": 14,
+        "name": {
+          "default": "General Chatting",
+          "localizations": {
+            "de": "Allgemeine Chats",
+            "fr": "Discussion g\u00e9n\u00e9rale",
+            "ru": "\u041e\u0431\u0449\u0435\u043d\u0438\u0435"
+          }
+        },
+        "is_primary": true
+      },
+      {
+        "id": 35,
+        "name": {
+          "default": "Content Creator",
+          "localizations": {
+            "de": "Content Creator",
+            "fr": "Cr\u00e9ateur de contenu",
+            "ru": "\u0421\u043e\u0437\u0434\u0430\u0442\u0435\u043b\u044c \u043a\u043e\u043d\u0442\u0435\u043d\u0442\u0430"
+          }
+        },
+        "is_primary": false
+      },
+      {
+        "id": 4,
+        "name": {
+          "default": "Creative Arts",
+          "localizations": {
+            "de": "Kreative K\u00fcnste",
+            "fr": "Arts cr\u00e9atifs",
+            "ru": "\u0418\u0441\u043a\u0443\u0441\u0441\u0442\u0432\u043e"
+          }
+        },
+        "is_primary": true
+      },
+      {
+        "id": 33,
+        "name": {
+          "default": "Events",
+          "localizations": {
+            "de": "Events",
+            "fr": "\u00c9v\u00e9nements",
+            "ru": "\u041c\u0435\u0440\u043e\u043f\u0440\u0438\u044f\u0442\u0438\u044f"
+          }
+        },
+        "is_primary": false
+      }
+    ],
+    "keywords": [
+      "j balvin",
+      "jose",
+      "balvin"
+    ],
+    "vanity_url_code": "jbalvin"
+  }
+}
