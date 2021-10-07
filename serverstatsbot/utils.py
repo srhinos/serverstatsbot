@@ -1,7 +1,12 @@
+import asyncio
+import datetime
 import inspect
 import json
 import re
-from datetime import datetime, timezone
+import traceback
+
+from functools import wraps
+from importlib import import_module
 
 import discord
 
@@ -219,11 +224,11 @@ def clean_bad_pings(string):
 
 
 def datetime_to_utc_ts(datetime):
-    return datetime.replace(tzinfo=timezone.utc).timestamp()
+    return datetime.datetime.replace(tzinfo=datetime.timezone.utc).timestamp()
 
 
 def snowflake_time(user_id):
-    return datetime.utcfromtimestamp(((int(user_id) >> 22) + DISCORD_EPOCH) / 1000)
+    return datetime.datetime.utcfromtimestamp(((int(user_id) >> 22) + DISCORD_EPOCH) / 1000)
 
 
 def timestamp_to_seconds(input_str):
@@ -337,3 +342,51 @@ def strfdelta(tdelta):
         d["seconds"],
         t["seconds"],
     )
+
+
+async def run_period(seconds, func, start=datetime.datetime.now(), *args, **kwargs):
+    while True:
+        diff = start - datetime.datetime.now()
+        diff_sec = diff.total_seconds()
+        await asyncio.sleep(diff_sec)
+        try:
+            if asyncio.iscoroutinefunction(func):
+                await func(*args, **kwargs)
+            else:
+                func(*args, **kwargs)
+        except Exception:
+            print("Error invoking scheduled function:")
+            traceback.print_exc()
+        start += datetime.timedelta(seconds=seconds)
+
+
+def imports(*modules, caller=None):
+    if not caller:
+        caller_frame = inspect.stack()[1]
+        caller_module = inspect.getmodule(caller_frame[0])
+    else:
+        caller_module = inspect.getmodule(caller)
+    loaded_modules = (
+        import_module(module, caller_module.__package__) for module in modules
+    )
+    return loaded_modules
+
+
+def ensure_imports(*modules):
+    def wrapper(func):
+        if asyncio.iscoroutinefunction(func):
+            @wraps(func)
+            async def wrapped(*args, **kwargs):
+                imported = imports(*modules, caller=func)
+                kwargs['modules'] = imported
+                return await func(*args, **kwargs)
+
+        else:
+            @wraps(func)
+            def wrapped(*args, **kwargs):
+                imported = imports(*modules, caller=func)
+                kwargs['modules'] = imported
+                return func(*args, **kwargs)
+
+        return wrapped
+    return wrapper
