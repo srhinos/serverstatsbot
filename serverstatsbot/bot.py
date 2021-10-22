@@ -50,9 +50,9 @@ class StatsBot(discord.Client):
         merged_guilds = await self.collect_undiscoverable_guilds(discoverable_guilds)
 
         rootLogger.info(
-            f"Collected {len(algolia_guilds)} discoverable guilds! Outting to file..."
+            f"Collected {len(merged_guilds)} discoverable guilds! Outting to file..."
         )
-        write_json("guild_list.json", algolia_guilds)
+        write_json("guild_list.json", merged_guilds)
         rootLogger.info('See "guild_list.json" for data!')
         print("Done!!!")
 
