@@ -1,16 +1,15 @@
 import asyncio
-import inspect
 import logging
-import pprint
-import re
 import traceback
-
 import aiohttp
-import discord
-from discord.http import HTTPClient, Route
+from urllib.parse import urlencode
 
-from .constants import prefix
+import discord
+from discord.http import Route
+
+from .constants import prefix, API_ENDPOINT, API_HEADERS
 from .utils import load_json, write_json
+from .range import ranges
 
 rootLogger = logging.getLogger(__name__)
 rootLogger.setLevel(logging.DEBUG)
@@ -28,7 +27,7 @@ class StatsBot(discord.Client):
     def __init__(self):
         super().__init__(fetch_offline_members=False)
         self.prefix = prefix
-        self.token = "PUT TOKEN HERE"
+        self.token = "CHANGE ME"
 
         rootLogger.critical("Bot Initalized...\n")
 
@@ -46,8 +45,8 @@ class StatsBot(discord.Client):
     async def on_ready(self):
         rootLogger.info("Connected To API!")
         rootLogger.info("~\n")
-
-        discoverable_guilds = await self.collect_discoverable_guilds()
+        algolia_guilds = await self.collect_algolia_guilds()
+        discoverable_guilds = await self.collect_discoverable_guilds(algolia_guilds)
         merged_guilds = await self.collect_undiscoverable_guilds(discoverable_guilds)
 
         rootLogger.info(
@@ -55,6 +54,7 @@ class StatsBot(discord.Client):
         )
         write_json("guild_list.json", merged_guilds)
         rootLogger.info('See "guild_list.json" for data!')
+        print("Done!!!")
 
     async def _wait_delete_msg(self, message, after):
         await asyncio.sleep(after)
@@ -148,6 +148,36 @@ class StatsBot(discord.Client):
             if msg:
                 return msg
 
+    async def collect_algolia_guilds(self):
+        requests = []
+        member_ranges = ranges()
+        for i in range(0, len(member_ranges) - 1):
+            minimum = member_ranges[i]
+            maximum = member_ranges[i + 1]
+            if (minimum != None and maximum != None):
+                params = urlencode({"filters":f"approximate_member_count > {minimum} AND approximate_member_count <= {maximum}"}, True)
+            
+            requests.append({
+                'indexName': "prod_discoverable_guilds",
+                'hitsPerPage': 1000,
+                'params': params
+            })
+
+        async with aiohttp.ClientSession() as session:
+            async with session.post(API_ENDPOINT, headers=API_HEADERS, json={"requests": requests}) as r:
+                body = await r.json()
+
+        hits = []
+        for result in body["results"]:
+            hits = hits + result["hits"]
+
+        for hit in hits:
+            hit["data_source"] = "algolia"
+            hit.pop("objectID", None)
+
+        temp_dict = {guild["id"]: guild for guild in hits}
+        return temp_dict
+
     async def collect_undiscoverable_guilds(self, discoverable_guilds):
         invite_code_list = load_json("guilds_not_discoverable.json")
 
@@ -175,7 +205,7 @@ class StatsBot(discord.Client):
 
         return guild_dict.update(discoverable_guilds)
 
-    async def collect_discoverable_guilds(self):
+    async def collect_discoverable_guilds(self, algolia_guilds):
         limit = 48
         offset = 0
         params = {"offset": offset, "limit": limit}
@@ -183,7 +213,7 @@ class StatsBot(discord.Client):
         request = await self.http.request(
             Route("GET", f"/discoverable-guilds"), params=params
         )
-
+        
         guild_dict = {guild["id"]: guild for guild in request["guilds"]}
 
         while request["total"] > 0:
@@ -197,11 +227,13 @@ class StatsBot(discord.Client):
             request = await self.http.request(
                 Route("GET", f"/discoverable-guilds"), params=params
             )
-
-            temp_dict = {guild["id"]: guild for guild in request["guilds"]}
+            for hit in request["guilds"]:
+                hit["data_source"] = "discord"
+            guilds = [dict(item, data_source='discord') for item in request[guilds]]
+            temp_dict = {guild["id"]: guild for guild in guilds}
             guild_dict.update(temp_dict)
 
-        return guild_dict
+        return algolia_guilds.update(guild_dict)
 
 
 if __name__ == "__main__":
