@@ -1,3 +1,4 @@
+token = "PUT TOKEN HERE"
 prefix = "++"
 
 DISCORD_EPOCH = 1420070400000

@@ -1,19 +1,33 @@
 import asyncio
+import datetime
+import glob
 import inspect
 import logging
 import pprint
 import re
+import sys
 import traceback
 
 import aiohttp
 import discord
 from discord.http import HTTPClient, Route
 
-from .constants import prefix
-from .utils import load_json, write_json
+from .plot import plot_all
+from .utils import load_json, write_json, run_period
+
+from .settings import Settings
 
 rootLogger = logging.getLogger(__name__)
 rootLogger.setLevel(logging.DEBUG)
+
+sh = logging.StreamHandler(stream=sys.stdout)
+sh.setFormatter(logging.Formatter(
+    fmt="[%(levelname)s]: %(message)s"
+))
+
+sh.setLevel(logging.DEBUG)
+
+rootLogger.addHandler(sh)
 
 
 class Response:
@@ -25,18 +39,29 @@ class Response:
 
 
 class StatsBot(discord.Client):
-    def __init__(self):
+    def __init__(self, **kwargs):
         super().__init__(fetch_offline_members=False)
-        self.prefix = prefix
-        self.token = "PUT TOKEN HERE"
+        self.already_ready = False
+        self.settings = Settings(**kwargs)
+        self.prefix = self.settings.prefix
+
+        self.running_tasks = set()
 
         rootLogger.critical("Bot Initalized...\n")
+
+    async def close(self):
+        for task in self.running_tasks:
+            task.cancel()
+            try:
+                await task
+            except asyncio.CancelledError:
+                rootLogger.debug(f"Canceled task {task}")
+        await super().close()
 
     def run(self):
         try:
             loop = asyncio.get_event_loop()
-            loop.run_until_complete(self.start(self.token))
-            loop.run_until_complete(self.connect())
+            loop.run_until_complete(self.start(self.settings.token, bot=self.settings.bot))
         except Exception:
             traceback.print_exc()
             loop.run_until_complete(self.close())
@@ -44,17 +69,75 @@ class StatsBot(discord.Client):
             loop.close()
 
     async def on_ready(self):
-        rootLogger.info("Connected To API!")
-        rootLogger.info("~\n")
+        if not self.already_ready:
+            rootLogger.info("Connected To API!")
+            rootLogger.info("~\n")
 
+            self.running_tasks.add(
+                asyncio.ensure_future(
+                    run_period(
+                        self.settings.fetch_period,
+                        self.collect_write_data,
+                        start=datetime.datetime.now() + datetime.timedelta(seconds=self.settings.delay_first_fetch)
+                    )
+                )
+            )
+            if self.settings.plot_period:
+                self.running_tasks.add(
+                    asyncio.ensure_future(
+                        run_period(
+                            self.settings.plot_period,
+                            self.plot_graphs,
+                            start=datetime.datetime.now() + datetime.timedelta(seconds=self.settings.delay_first_plot)
+                        )
+                    )
+                )
+            self.already_ready = True
+        else:
+            rootLogger.info("Reconnected To API!")
+
+    async def collect_write_data(self):
         discoverable_guilds = await self.collect_discoverable_guilds()
         merged_guilds = await self.collect_undiscoverable_guilds(discoverable_guilds)
 
         rootLogger.info(
             f"Collected {len(merged_guilds)} discoverable guilds! Outting to file..."
         )
-        write_json("guild_list.json", merged_guilds)
-        rootLogger.info('See "guild_list.json" for data!')
+
+        current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M")
+
+        write_json(f"collected_data/guild_list_{current_time}.json", merged_guilds)
+        write_json(f"guild_list.json", merged_guilds)
+        rootLogger.info(f'See "collected_data/guild_list_{current_time}.json" for data of this time!')
+        rootLogger.info('See "guild_list.json" for latest data!')
+
+    def plot_graphs(self):
+        # @TheerapakG: should we store this so that we don't need to load again?
+        # or shold we populate graph as loaded?
+        load_data = list()
+
+        for filename in glob.iglob('./collected_data/guild_list_*.json'):
+            date = re.search(r'guild_list_(.+).json', filename).group(1)
+            
+            this_data = list()
+            raw = load_json(filename)
+            for guild in raw.values():
+                this_data.append(
+                    {
+                        'name': guild['name'],
+                        'onlines': guild['approximate_presence_count'],
+                        'members': guild['approximate_member_count']
+                    }
+                )
+
+            load_data.append({'date': datetime.datetime.strptime(date, "%Y%m%d-%H%M"), 'guilds': this_data})
+
+        fname = plot_all(load_data, 'date', 'members', 'name', 'guilds', x_date=True, n=10, title = 'top 10 members over time')
+        rootLogger.info(f'See "{fname}" for member graph!')
+        fname = plot_all(load_data, 'date', 'onlines', 'name', 'guilds', x_date=True, n=10, title = 'top 10 onlines over time')
+        rootLogger.info(f'See "{fname}" for online graph!')
+        
+
 
     async def _wait_delete_msg(self, message, after):
         await asyncio.sleep(after)
@@ -151,7 +234,7 @@ class StatsBot(discord.Client):
     async def collect_undiscoverable_guilds(self, discoverable_guilds):
         invite_code_list = load_json("guilds_not_discoverable.json")
 
-        guild_dict = {}
+        guild_dict = dict()
 
         for invite_code in invite_code_list:
             try:
@@ -173,9 +256,14 @@ class StatsBot(discord.Client):
             except Exception:
                 continue
 
-        return guild_dict.update(discoverable_guilds)
+        guild_dict.update(discoverable_guilds)
+        return guild_dict
 
     async def collect_discoverable_guilds(self):
+        if self.user.bot:
+            rootLogger.info("Not collecting discoverables via API due to being a bot")
+            return dict()
+
         limit = 48
         offset = 0
         params = {"offset": offset, "limit": limit}
